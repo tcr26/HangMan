@@ -1,0 +1,39 @@
+body {
+    background-color: lightblue;
+}
+
+#newGame {
+  color: purple;
+  border-radius: 12px;
+  display: block;
+  margin-top: 5px;
+}
+
+#newGame:hover {
+  color: white;
+  background-color: purple;
+  border-radius: 12px;
+}
+
+#try {
+  color: white;
+  background-color: purple;
+  border-radius: 12px;
+  margin-top: 5px;
+}
+
+#try:hover {
+  color: purple;
+  background-color: white;
+  border-radius: 12px;
+}
+
+#input:focus {
+  background-color: purple;
+  color: white;
+}
+
+#word {
+  color: purple;
+  font-size: 80px;
+}

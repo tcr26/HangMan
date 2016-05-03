@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman Tree</title>
+  <link href="HangManTree.css" rel="stylesheet" />
+</head>
+<body>
+
+  <select id="selectCategory">
+    <option id="countries" name="countries" value="countries">Countries</option>
+    <option id="footballClubs" name="footballClubs" value="footballClubs">Football Clubs</option>
+    <option id="games" name="games" value="games">Games</option><br>
+
+    <input type="checkbox" id="tip" name="name" value="Tip">Check for Tip<br>
+
+    <label for="newGame"></label>
+    <input type="button" id="newGame" name="newgame" value="New Game" onclick="newGame();"/>
+  </select>
+
+  <br>
+  <label for="input"></label>
+  <input type="text" id="input" name="input" size="1" autofocus>
+  <br>
+
+  <label for="try"></label>
+  <input type="button" id="try" name="try" value="Try" onclick="inputCheck();wordCheck(word);">
+
+    <p>Guesses left: <span id="guessLeft">10</span></p>
+
+    <p>Tried Letters: <span id="triedLetters" id="triedLetters"></span></p>
+
+    <center><div id="word"></div></center>
+    <center><div id="tipDiv"></div></center>
+
+    <script type='text/javascript' src="HangManTree.js"></script>
+</body>
+</html>
