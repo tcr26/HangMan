@@ -56,7 +56,7 @@ function getRandomElement(elements) {
 
 function newGame() {
   string = '';
-  if (newGame) {
+  if (newGame) {	
     var asd = getRandomElement(categoriesList);
     getCategory(asd);
     userInput.value = '';
@@ -64,6 +64,7 @@ function newGame() {
     currentLetter = '';
     triedLettersCheck = [];
     userInput.focus();
+	location.reload();
   }
 }
 
